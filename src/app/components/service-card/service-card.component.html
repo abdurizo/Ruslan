@@ -1,0 +1,15 @@
+<div class="grid grid-cols-2 gap-[30px]">
+    @for (item of serviceCards; track item.id) {
+      <div class="flex gap-[20px] bg-white p-[20px] rounded-[10px] duration-300 hover:scale-[1.02]">
+        <div class="w-[500px]">
+          <img [src]="item.img" alt="" class="w-full" />
+        </div>
+        <div class="font-poppins_regular">
+          <h3 class="text-[#001955] mb-[5px]">{{item.title}}</h3>
+          <p class="font-poppins_regular text-[#666]">
+            {{item.content}}
+          </p>
+        </div>
+      </div>
+    }
+</div>

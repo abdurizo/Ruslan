@@ -1,0 +1,12 @@
+<div class="relative">
+  <div
+    class="p-[100px] container mt-[100px] bg-[linear-gradient(180deg,_rgba(255,255,255,0)_0%,_#eaf3ff_100%)] rounded-[60px] grid grid-cols-3 gap-[20px]"
+  >
+    @for (item of cards; track item.id) {
+      <app-card-technology [card]="item"></app-card-technology>
+    }
+  </div>
+  <div class="">
+    <img src="assets/img/robotics-06-1-480x827.png" alt="" class="absolute top-[-200px] left-[0px]" />
+  </div>
+</div>

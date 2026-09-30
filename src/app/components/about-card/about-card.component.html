@@ -1,0 +1,24 @@
+<div class="container grid grid-cols-3 gap-[30px] overflow-visible">
+  @for (item of cards; track item.id) {
+    <div
+      class="relative px-[20px] py-[20px] bg-stone-100 rounded-[10px] text-center"
+    >
+      <img
+        [src]="item.img"
+        alt=""
+        class="absolute top-[-80px] left-0 left-1/2 -translate-x-1/2"
+      />
+      <h2
+        class="mt-[90px] text-[#001955] font-poppins_black text-[18px] font-bold"
+      >
+        {{ item.title }}
+      </h2>
+      <p class="text-[#666] mt-[10px]">{{ item.description }}</p>
+      <button
+        class="mt-[20px] px-[20px] py-[10px] bg-blue-500 text-white rounded-[5px] uppercase duration-300 hover:bg-blue-500/85"
+      >
+        узнать больше
+      </button>
+    </div>
+  }
+</div>

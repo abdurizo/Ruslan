@@ -1,0 +1,9 @@
+.service {
+  background-image:
+    url("https://turnkey.reg.ru/wordpress/divi/robotics/wp-content/uploads/2021/02/robotics-12.png"),
+    linear-gradient(180deg, #3e0056 28%, #7c0ee3 100%);
+
+  background-size: auto, cover;
+  background-position: left top, center;
+  background-repeat: no-repeat, no-repeat;
+}

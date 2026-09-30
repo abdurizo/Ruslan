@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply box-border;
+  }
+  html {
+    @apply h-full scroll-smooth;
+  }
+}
+@layer components {
+  .container {
+    @apply max-w-[1080px] mx-auto px-6 overflow-hidden;
+  }
+}
